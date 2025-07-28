@@ -1,0 +1,46 @@
+{
+	"Controls": [
+		{
+			"Header": {
+				"SubHeadline": "Sub Headline",
+				"Alignment": "Left",
+				"IconIsCircular": false,
+				"DisableIconText": false
+			},
+			"Sections": [
+				{
+					"_Name": "SideDrawerSection0",
+					"Items": [
+						{
+							"Title": "Employees",
+							"Image": "sap-icon://action",
+							"OnPress": {
+								"Name": "/MDKDisplayApp/Actions/GenericNavigation.action",
+								"Properties": {
+									"PageToOpen": "/MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_List.page"
+								}
+							},
+							"_Name": "SideDrawerSection0Item0",
+							"Visible": true,
+							"TextAlignment": "Left"
+						}
+					],
+					"Visible": true,
+					"PreserveImageSpacing": true,
+					"SeparatorEnabled": true
+				}
+			],
+			"_Type": "Control.Type.SideDrawer",
+			"_Name": "SideDrawer0",
+			"AlwaysShowDrawerButton": false,
+			"ClearHistory": false
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar"
+	}
+}

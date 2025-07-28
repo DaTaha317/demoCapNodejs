@@ -73,6 +73,7 @@ let mdkdisplayapp_pages_demotahaappservice_employee_employee_create_page = __web
 let mdkdisplayapp_pages_demotahaappservice_employee_employee_detail_page = __webpack_require__(/*! ./MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_Detail.page */ "./build.definitions/MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_Detail.page")
 let mdkdisplayapp_pages_demotahaappservice_employee_employee_edit_page = __webpack_require__(/*! ./MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_Edit.page */ "./build.definitions/MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_Edit.page")
 let mdkdisplayapp_pages_demotahaappservice_employee_employee_list_page = __webpack_require__(/*! ./MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_List.page */ "./build.definitions/MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_List.page")
+let mdkdisplayapp_pages_main_page = __webpack_require__(/*! ./MDKDisplayApp/Pages/Main.page */ "./build.definitions/MDKDisplayApp/Pages/Main.page")
 let mdkdisplayapp_rules_application_appupdatefailure_js = __webpack_require__(/*! ./MDKDisplayApp/Rules/Application/AppUpdateFailure.js */ "./build.definitions/MDKDisplayApp/Rules/Application/AppUpdateFailure.js")
 let mdkdisplayapp_rules_application_appupdatesuccess_js = __webpack_require__(/*! ./MDKDisplayApp/Rules/Application/AppUpdateSuccess.js */ "./build.definitions/MDKDisplayApp/Rules/Application/AppUpdateSuccess.js")
 let mdkdisplayapp_rules_application_clientismultiusermode_js = __webpack_require__(/*! ./MDKDisplayApp/Rules/Application/ClientIsMultiUserMode.js */ "./build.definitions/MDKDisplayApp/Rules/Application/ClientIsMultiUserMode.js")
@@ -158,6 +159,7 @@ module.exports = {
 	mdkdisplayapp_pages_demotahaappservice_employee_employee_detail_page : mdkdisplayapp_pages_demotahaappservice_employee_employee_detail_page,
 	mdkdisplayapp_pages_demotahaappservice_employee_employee_edit_page : mdkdisplayapp_pages_demotahaappservice_employee_employee_edit_page,
 	mdkdisplayapp_pages_demotahaappservice_employee_employee_list_page : mdkdisplayapp_pages_demotahaappservice_employee_employee_list_page,
+	mdkdisplayapp_pages_main_page : mdkdisplayapp_pages_main_page,
 	mdkdisplayapp_rules_application_appupdatefailure_js : mdkdisplayapp_rules_application_appupdatefailure_js,
 	mdkdisplayapp_rules_application_appupdatesuccess_js : mdkdisplayapp_rules_application_appupdatesuccess_js,
 	mdkdisplayapp_rules_application_clientismultiusermode_js : mdkdisplayapp_rules_application_clientismultiusermode_js,
@@ -920,27 +922,13 @@ var ___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.
-
-Examples:
-
-@mdkYellow1: #ffbb33;
-@mdkRed1: #ff0000;
-
-//// By-Type style: All Pages in the application will now have a yellow background
-Page
-
-{ background-color: @mdkYellow1; }
-//// By-Name style: All Buttons with _Name == "BlueButton" will now have this style
-#BlueButton
-
-{ color: @mdkYellow1; background-color: #0000FF; }
-//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function
-
-.MyButton
-
-{ color: @mdkYellow1; background-color: @mdkRed1; }
-*/
+___CSS_LOADER_EXPORT___.push([module.id, `ActionBar {
+  color: white;
+  background-color: #014055;
+}
+ToolBar {
+  background-color: #889397;
+}
 `, ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
@@ -959,27 +947,20 @@ var ___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* The LESS stylesheet provides the ability to define styling styles that can be used to style the UI in the MDK app.
+___CSS_LOADER_EXPORT___.push([module.id, `@color-primary: #014055;
+@color-secondary: #889397;
+@text-primary: white;
 
-Examples:
 
-@mdkYellow1: #ffbb33;
-@mdkRed1: #ff0000;
+ActionBar {
+    color: @text-primary;
+    background-color: @color-primary;
+}
 
-//// By-Type style: All Pages in the application will now have a yellow background
-Page
-
-{ background-color: @mdkYellow1; }
-//// By-Name style: All Buttons with _Name == "BlueButton" will now have this style
-#BlueButton
-
-{ color: @mdkYellow1; background-color: #0000FF; }
-//// By-Class style: These style classes can be referenced from rules and set using ClientAPI setStyle function
-
-.MyButton
-
-{ color: @mdkYellow1; background-color: @mdkRed1; }
-*/`, ""]);
+ToolBar {
+    background-color: @color-secondary;
+}
+`, ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -997,7 +978,14 @@ var ___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, ""]);
+___CSS_LOADER_EXPORT___.push([module.id, `.ns-light ActionBar {
+	color: white;
+	background-color: #014055;
+}
+.ns-light ToolBar {
+	background-color: #889397;
+}
+`, ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1015,7 +1003,14 @@ var ___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_NO_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, ""]);
+___CSS_LOADER_EXPORT___.push([module.id, `@color-primary: #014055;
+@color-secondary: #889397;
+@text-primary: white;
+ActionBar {
+	font-color: white;
+	background-color: #014055;
+}
+`, ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -1162,6 +1157,16 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
 
 /***/ }),
 
+/***/ "./build.definitions/MDKDisplayApp/Pages/Main.page":
+/*!*********************************************************!*\
+  !*** ./build.definitions/MDKDisplayApp/Pages/Main.page ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"Header":{"SubHeadline":"Sub Headline","Alignment":"Left","IconIsCircular":false,"DisableIconText":false},"Sections":[{"_Name":"SideDrawerSection0","Items":[{"Title":"Employees","Image":"sap-icon://action","OnPress":{"Name":"/MDKDisplayApp/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_List.page"}},"_Name":"SideDrawerSection0Item0","Visible":true,"TextAlignment":"Left"}],"Visible":true,"PreserveImageSpacing":true,"SeparatorEnabled":true}],"_Type":"Control.Type.SideDrawer","_Name":"SideDrawer0","AlwaysShowDrawerButton":false,"ClearHistory":false}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
+
+/***/ }),
+
 /***/ "./build.definitions/MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_Create.page":
 /*!************************************************************************************************!*\
   !*** ./build.definitions/MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_Create.page ***!
@@ -1208,7 +1213,7 @@ module.exports = {"ActionBar":{"Items":[{"OnPress":"/MDKDisplayApp/Actions/demoT
   \*******************************************/
 /***/ ((module) => {
 
-module.exports = {"_Name":"MDKDisplayApp","Version":"/MDKDisplayApp/Globals/Application/AppDefinition_Version.global","MainPage":"/MDKDisplayApp/Pages/demoTahaAppService_Employee/Employee_List.page","OnLaunch":"/MDKDisplayApp/Rules/Service/Initialize.js","OnWillUpdate":"/MDKDisplayApp/Rules/Application/OnWillUpdate.js","OnDidUpdate":"/MDKDisplayApp/Rules/Service/Initialize.js","Styles":"/MDKDisplayApp/Styles/Styles.css","Localization":"/MDKDisplayApp/i18n/i18n.properties","_SchemaVersion":"25.6","StyleSheets":{"Styles":{"css":"/MDKDisplayApp/Styles/Styles.light.css","ios":"/MDKDisplayApp/Styles/Styles.light.nss","android":"/MDKDisplayApp/Styles/Styles.light.json"}},"SDKStyles":{"ios":"/MDKDisplayApp/Styles/Styles.light.nss","android":"/MDKDisplayApp/Styles/Styles.light.json"}}
+module.exports = {"MainPage":"/MDKDisplayApp/Pages/Main.page","OnLaunch":["/MDKDisplayApp/Rules/Service/Initialize.js"],"OnWillUpdate":"/MDKDisplayApp/Rules/Application/OnWillUpdate.js","OnDidUpdate":"/MDKDisplayApp/Rules/Service/Initialize.js","Styles":"/MDKDisplayApp/Styles/Styles.css","Version":"/MDKDisplayApp/Globals/Application/AppDefinition_Version.global","Localization":"/MDKDisplayApp/i18n/i18n.properties","_SchemaVersion":"25.6","_Name":"MDKDisplayApp","StyleSheets":{"Styles":{"css":"/MDKDisplayApp/Styles/Styles.light.css","ios":"/MDKDisplayApp/Styles/Styles.light.nss","android":"/MDKDisplayApp/Styles/Styles.light.json"}},"SDKStyles":{"ios":"/MDKDisplayApp/Styles/Styles.light.nss","android":"/MDKDisplayApp/Styles/Styles.light.json"}}
 
 /***/ }),
 
@@ -1741,7 +1746,7 @@ __webpack_require__.d(exports, {
 /***/ ((module) => {
 
 "use strict";
-module.exports = {};
+module.exports = /*#__PURE__*/JSON.parse('{"ActionBar":{"font-color":"white","background-color":"#014055"}}');
 
 /***/ }),
 
