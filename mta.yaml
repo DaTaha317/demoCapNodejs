@@ -17,6 +17,8 @@ modules:
     parameters:
       instances: 1
       buildpack: nodejs_buildpack
+      disk-quota: 512M
+      memory: 256M
     build-parameters:
       builder: npm-ci
     provides:
@@ -25,15 +27,27 @@ modules:
           srv-url: ${default-url}
     requires:
       - name: demoTahaApp-auth
-      - name: demoTahaApp-db
 
-  - name: demoTahaApp-db-deployer
-    type: hdb
-    path: gen/db
+  - name: demoTahaApp
+    type: approuter.nodejs
+    path: app/router
     parameters:
-      buildpack: nodejs_buildpack
+      keep-existing-routes: true
+      disk-quota: 256M
+      memory: 256M
     requires:
-      - name: demoTahaApp-db
+      - name: srv-api
+        group: destinations
+        properties:
+          name: srv-api # must be used in xs-app.json as well
+          url: ~{srv-url}
+          forwardAuthToken: true
+      - name: demoTahaApp-auth
+    provides:
+      - name: app-api
+        properties:
+          app-protocol: ${protocol}
+          app-uri: ${default-uri}
 
 resources:
   - name: demoTahaApp-auth
@@ -43,10 +57,11 @@ resources:
       service-plan: application
       path: ./xs-security.json
       config:
-        xsappname: demoTahaApp-${org}-${space}
+        xsappname: demoTahaApp
         tenant-mode: dedicated
-  - name: demoTahaApp-db
-    type: com.sap.xs.hdi-container
-    parameters:
-      service: hana
-      service-plan: hdi-shared
+        oauth2-configuration:
+          redirect-uris:
+            - https://*~{app-api/app-uri}/**
+    requires:
+      - name: app-api
+
