@@ -1,0 +1,55 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/MDKDisplayApp/Services/demoTahaAppService.service",
+		"EntitySet": "Employee",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"Caption": "Cancel",
+				"OnPress": "/MDKDisplayApp/Rules/demoTahaAppService/Employee/Employee_Cancel.js",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/MDKDisplayApp/Rules/demoTahaAppService/Employee/Employee_UpdateEntity.js",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_Employee_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Name",
+							"_Name": "Name",
+							"Value": "{Name}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Age",
+							"_Name": "Age",
+							"Value": "{Age}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Employee_Edit"
+}

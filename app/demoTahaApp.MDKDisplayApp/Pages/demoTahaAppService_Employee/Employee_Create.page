@@ -1,0 +1,48 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MDKDisplayApp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/MDKDisplayApp/Rules/demoTahaAppService/Employee/Employee_CreateEntity.js",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_Employee_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Name",
+							"_Name": "Name",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Age",
+							"KeyboardType": "Number",
+							"_Name": "Age",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Employee_Create"
+}

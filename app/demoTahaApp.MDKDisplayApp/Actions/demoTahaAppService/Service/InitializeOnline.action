@@ -1,0 +1,9 @@
+{
+    "Service": "/MDKDisplayApp/Services/demoTahaAppService.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnFailure": "/MDKDisplayApp/Actions/demoTahaAppService/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

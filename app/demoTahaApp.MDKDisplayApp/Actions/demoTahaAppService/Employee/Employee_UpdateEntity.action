@@ -1,0 +1,18 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Employee",
+        "Service": "/MDKDisplayApp/Services/demoTahaAppService.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Name": "#Page:Employee_Edit/#Control:Name/#Value",
+        "Age": "#Page:Employee_Edit/#Control:Age/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/MDKDisplayApp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/MDKDisplayApp/Actions/UpdateEntityFailureMessage.action"
+}

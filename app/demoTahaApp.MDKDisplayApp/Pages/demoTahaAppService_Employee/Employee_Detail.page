@@ -1,0 +1,72 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/MDKDisplayApp/Services/demoTahaAppService.service",
+		"EntitySet": "Employee",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/MDKDisplayApp/Rules/demoTahaAppService/Employee/NavToEmployee_Edit.js",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/MDKDisplayApp/Rules/demoTahaAppService/Employee/Employee_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Employee_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{Name}",
+						"Subhead": "{Age}",
+						"BodyText": "",
+						"Footnote": "",
+						"Description": "",
+						"StatusText": "",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": ""
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Name",
+							"Value": "{Name}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Age",
+							"Value": "{Age}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Employee_Detail"
+}

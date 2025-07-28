@@ -1,0 +1,17 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/MDKDisplayApp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/MDKDisplayApp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Name": "#Page:Employee_Create/#Control:Name/#Value",
+        "Age": "#Page:Employee_Create/#Control:Age/#Value"
+    },
+    "Target": {
+        "EntitySet": "Employee",
+        "Service": "/MDKDisplayApp/Services/demoTahaAppService.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

@@ -1,0 +1,19 @@
+{
+    "_Type": "Action.Type.ODataService.DraftEnabled.Discard",
+    "Target": {
+        "Service": "/MDKDisplayApp/Services/demoTahaAppService.service",
+        "EntitySet": "Employee",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "ShowActivityIndicator": true,
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": {
+        "Name": "/MDKDisplayApp/Actions/UpdateEntitySuccessMessage.action",
+        "Properties": {
+            "Message": "Draft Discarded"
+        }
+    },
+    "OnFailure": "/MDKDisplayApp/Actions/UpdateEntityFailureMessage.action"
+}
