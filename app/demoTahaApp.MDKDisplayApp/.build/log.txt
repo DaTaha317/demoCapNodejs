@@ -1,0 +1,2 @@
+Pass:
+Generated bundle file /home/user/projects/demoTahaApp/app/demoTahaApp.MDKDisplayApp/.build/MDKDisplayApp/.build/uploadBundle.zip
