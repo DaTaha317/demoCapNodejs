@@ -1,0 +1,13 @@
+# GET http://localhost:4004/api/user?userId=sfadmin
+
+POST http://localhost:4004/api/user/getUserInfo
+Content-Type: application/json
+
+{
+  "userId": "sfadmin"
+}
+
+
+# GET https://apisalesdemo2.successfactors.eu/odata/v2/User?$skip=0&$top=10&$filter=userId eq 'sfadmin'
+# Authorization: Basic c2ZhZG1pbkBTRkNQQVJUMDAyMTA4OlBob2VuaXhAMTIzNDU2
+# Accept: application/json

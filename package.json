@@ -40,12 +40,18 @@
           "url": "db.sqlite"
         }
       },
+      "successFactorsAPI": {
+      "kind": "rest",
+      "credentials": {
+        "destination": "PhoenixSuccessFactors"
+      }
+    },
       "auth": {
         "[development]": {
           "kind": "dummy"
         },
         "[production]": {
-          "kind": "xsuaa"
+          "kind": "dummy"
         }
       }
     }

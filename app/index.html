@@ -27,7 +27,7 @@
                     return Controller.extend("PreviewController", {
                         onInit: function () {
 
-                            const data = {"Services":[{"ServiceName":"demoTahaAppService","DetailsURL":"./service/demoTahaAppService/","Metadata":"./service/demoTahaAppService/$metadata","Entities":[{"Name":"Employee","URL":"./service/demoTahaAppService/Employee","FioriURL":"$fiori-preview/demoTahaAppService/Employee#preview-app"}],"EntitiesCount":1}]}
+                            const data = {"Services":[{"ServiceName":"userInfoService","DetailsURL":"./api/user/","Metadata":"./api/user/$metadata","Entities":[{"Name":"User","URL":"./api/user/User","FioriURL":"$fiori-preview/userInfoService/User#preview-app"}],"EntitiesCount":1}]}
                             this.getView().setModel(new JSONModel(data));
                         }
                     });

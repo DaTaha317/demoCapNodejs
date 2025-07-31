@@ -1,8 +1,7 @@
 namespace demoTahaApp;
 
-entity Employee
+entity User
 {
-    key ID : UUID;
     Name : String(100);
-    Age : Integer;
+    Email : String(100);
 }

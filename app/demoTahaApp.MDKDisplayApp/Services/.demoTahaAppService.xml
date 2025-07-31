@@ -90,45 +90,36 @@
                 <Annotation Term="UI.Hidden" Bool="true"/>
             </Annotations>
             <Annotations Target="demoTahaAppService.DraftAdministrativeData">
-                <Annotation Term="Common.Label" String="{i18n>
-                    Draft_DraftAdministrativeData}"/>
-                </Annotations>
-                <Annotations Target="demoTahaAppService.DraftAdministrativeData/DraftUUID">
-                    <Annotation Term="UI.Hidden" Bool="true"/>
-                    <Annotation Term="Common.Label" String="{i18n>
-                        Draft_DraftUUID}"/>
-                        <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
-                    </Annotations>
-                    <Annotations Target="demoTahaAppService.DraftAdministrativeData/CreationDateTime">
-                        <Annotation Term="Common.Label" String="{i18n>
-                            Draft_CreationDateTime}"/>
-                        </Annotations>
-                        <Annotations Target="demoTahaAppService.DraftAdministrativeData/CreatedByUser">
-                            <Annotation Term="Common.Label" String="{i18n>
-                                Draft_CreatedByUser}"/>
-                            </Annotations>
-                            <Annotations Target="demoTahaAppService.DraftAdministrativeData/DraftIsCreatedByMe">
-                                <Annotation Term="UI.Hidden" Bool="true"/>
-                                <Annotation Term="Common.Label" String="{i18n>
-                                    Draft_DraftIsCreatedByMe}"/>
-                                </Annotations>
-                                <Annotations Target="demoTahaAppService.DraftAdministrativeData/LastChangeDateTime">
-                                    <Annotation Term="Common.Label" String="{i18n>
-                                        Draft_LastChangeDateTime}"/>
-                                    </Annotations>
-                                    <Annotations Target="demoTahaAppService.DraftAdministrativeData/LastChangedByUser">
-                                        <Annotation Term="Common.Label" String="{i18n>
-                                            Draft_LastChangedByUser}"/>
-                                        </Annotations>
-                                        <Annotations Target="demoTahaAppService.DraftAdministrativeData/InProcessByUser">
-                                            <Annotation Term="Common.Label" String="{i18n>
-                                                Draft_InProcessByUser}"/>
-                                            </Annotations>
-                                            <Annotations Target="demoTahaAppService.DraftAdministrativeData/DraftIsProcessedByMe">
-                                                <Annotation Term="UI.Hidden" Bool="true"/>
-                                                <Annotation Term="Common.Label" String="{i18n>
-                                                    Draft_DraftIsProcessedByMe}"/>
-                                                </Annotations>
-                                            </Schema>
-                                        </edmx:DataServices>
-                                    </edmx:Edmx>
+                <Annotation Term="Common.Label" String="Draft Administrative Data"/>
+            </Annotations>
+            <Annotations Target="demoTahaAppService.DraftAdministrativeData/DraftUUID">
+                <Annotation Term="UI.Hidden" Bool="true"/>
+                <Annotation Term="Common.Label" String="Draft (Technical ID)"/>
+                <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
+            </Annotations>
+            <Annotations Target="demoTahaAppService.DraftAdministrativeData/CreationDateTime">
+                <Annotation Term="Common.Label" String="Draft Created On"/>
+            </Annotations>
+            <Annotations Target="demoTahaAppService.DraftAdministrativeData/CreatedByUser">
+                <Annotation Term="Common.Label" String="Draft Created By"/>
+            </Annotations>
+            <Annotations Target="demoTahaAppService.DraftAdministrativeData/DraftIsCreatedByMe">
+                <Annotation Term="UI.Hidden" Bool="true"/>
+                <Annotation Term="Common.Label" String="Draft Created By Me"/>
+            </Annotations>
+            <Annotations Target="demoTahaAppService.DraftAdministrativeData/LastChangeDateTime">
+                <Annotation Term="Common.Label" String="Draft Last Changed On"/>
+            </Annotations>
+            <Annotations Target="demoTahaAppService.DraftAdministrativeData/LastChangedByUser">
+                <Annotation Term="Common.Label" String="Draft Last Changed By"/>
+            </Annotations>
+            <Annotations Target="demoTahaAppService.DraftAdministrativeData/InProcessByUser">
+                <Annotation Term="Common.Label" String="Draft In Process By"/>
+            </Annotations>
+            <Annotations Target="demoTahaAppService.DraftAdministrativeData/DraftIsProcessedByMe">
+                <Annotation Term="UI.Hidden" Bool="true"/>
+                <Annotation Term="Common.Label" String="Draft In Process By Me"/>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

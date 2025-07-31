@@ -1683,7 +1683,7 @@ module.exports = {"Value":"1-800-677-7271","_Type":"String"}
   \*****************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"DestinationName":"../service/demoTahaAppService/","OfflineEnabled":false,"LanguageURLParam":"","OnlineOptions":{},"OfflineOptions":{},"PathSuffix":"","SourceType":"Cloud","ServiceUrl":""}
+module.exports = {"ServiceUrl":"https://phoenix-it-solutions-mdk-dev-66qe26pc-dev-demotahaapp-srv.cfapps.eu10-005.hana.ondemand.com/service/demoTahaAppService","OfflineEnabled":false,"SourceType":"ServiceURL"}
 
 /***/ }),
 
